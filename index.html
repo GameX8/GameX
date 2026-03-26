@@ -2,30 +2,69 @@
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>🎮 GameX</title>
 
 <style>
 body {
-  background: black;
-  color: white;
-  text-align: center;
+  margin: 0;
   font-family: Arial;
+  background: #0f172a;
+  color: white;
 }
 
-h1 {
-  margin-top: 20px;
+header {
+  background: #020617;
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.game {
-  margin: 30px auto;
+.search {
+  text-align: center;
+  margin: 15px;
+}
+
+.search input {
+  padding: 10px;
   width: 80%;
+  border-radius: 10px;
+  border: none;
 }
 
-iframe {
-  width: 800px;
-  height: 500px;
-  border: 2px solid white;
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
   border-radius: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
 }
 </style>
 
@@ -33,27 +72,38 @@ iframe {
 
 <body>
 
-<h1>🎮 GameX</h1>
-<p>أفضل موقع ألعاب 🔥</p>
+<header>🎮 GameX</header>
 
-<!-- لعبة 1 -->
-<div class="game">
-  <h2>🚗 Drive Mad</h2>
-  <a href="https://www.onlinegames.io/games/2023/unity2/drive-mad/index.html" target="_blank">
-    <button style="padding:10px 20px; font-size:18px;">🎮 العب الآن</button>
-  </a>
+<div class="search">
+  <input type="text" placeholder="ابحث عن لعبة...">
 </div>
 
-<!-- لعبة 2 -->
-<div class="game">
-  <h2>🏎️ Car Rush</h2>
-  <iframe src="https://www.onlinegames.io/games/2022/unity/car-rush/index.html"></iframe>
-</div>
+<div class="container">
 
-<!-- لعبة 3 -->
-<div class="game">
-  <h2>🧠 Puzzle Game</h2>
-  <iframe src="https://www.onlinegames.io/games/2022/html5/puzzle/index.html"></iframe>
+  <div class="card">
+    <img src="https://img.gamedistribution.com/drive-mad.jpg">
+    <h3>Drive Mad</h3>
+    <a href="https://www.onlinegames.io/games/2023/unity2/drive-mad/index.html" target="_blank">
+      <button>🎮 العب الآن</button>
+    </a>
+  </div>
+
+  <div class="card">
+    <img src="https://img.gamedistribution.com/car-rush.jpg">
+    <h3>Car Rush</h3>
+    <a href="https://www.onlinegames.io/games/2022/unity/car-rush/index.html" target="_blank">
+      <button>🎮 العب الآن</button>
+    </a>
+  </div>
+
+  <div class="card">
+    <img src="https://img.gamedistribution.com/puzzle.jpg">
+    <h3>Puzzle Game</h3>
+    <a href="https://www.onlinegames.io/games/2022/html5/puzzle/index.html" target="_blank">
+      <button>🎮 العب الآن</button>
+    </a>
+  </div>
+
 </div>
 
 </body>
