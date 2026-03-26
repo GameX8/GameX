@@ -9,60 +9,35 @@
 body {
   margin: 0;
   font-family: Arial;
-  background: #0f172a;
+  background: #111;
   color: white;
+  text-align: center;
 }
 
 header {
-  background: #020617;
+  background: #222;
   padding: 15px;
-  text-align: center;
   font-size: 24px;
-  font-weight: bold;
-}
-
-.search {
-  text-align: center;
-  margin: 15px;
-}
-
-.search input {
-  padding: 10px;
-  width: 80%;
-  border-radius: 10px;
-  border: none;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
 }
 
 .card {
-  background: #1e293b;
+  background: #1e1e1e;
   padding: 15px;
-  border-radius: 15px;
-  text-align: center;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.card img {
-  width: 100%;
   border-radius: 10px;
 }
 
 button {
-  margin-top: 10px;
   padding: 10px;
   border: none;
   border-radius: 8px;
-  background: #3b82f6;
+  background: #4CAF50;
   color: white;
   cursor: pointer;
 }
@@ -74,33 +49,26 @@ button {
 
 <header>🎮 GameX</header>
 
-<div class="search">
-  <input type="text" placeholder="ابحث عن لعبة...">
-</div>
-
 <div class="container">
 
   <div class="card">
-    <img src="https://img.gamedistribution.com/drive-mad.jpg">
-    <h3>Drive Mad</h3>
+    <h3>🚗 Drive Mad</h3>
     <a href="https://www.onlinegames.io/games/2023/unity2/drive-mad/index.html" target="_blank">
-      <button>🎮 العب الآن</button>
+      <button>العب الآن</button>
     </a>
   </div>
 
   <div class="card">
-    <img src="https://img.gamedistribution.com/car-rush.jpg">
-    <h3>Car Rush</h3>
+    <h3>🏎️ Car Rush</h3>
     <a href="https://www.onlinegames.io/games/2022/unity/car-rush/index.html" target="_blank">
-      <button>🎮 العب الآن</button>
+      <button>العب الآن</button>
     </a>
   </div>
 
   <div class="card">
-    <img src="https://img.gamedistribution.com/puzzle.jpg">
-    <h3>Puzzle Game</h3>
+    <h3>🧠 Puzzle</h3>
     <a href="https://www.onlinegames.io/games/2022/html5/puzzle/index.html" target="_blank">
-      <button>🎮 العب الآن</button>
+      <button>العب الآن</button>
     </a>
   </div>
 
